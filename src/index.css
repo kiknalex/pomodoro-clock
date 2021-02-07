@@ -1,13 +1,101 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+}
+div {
+  display: inline-block;
+}
+button {
+      background: none;
+      outline: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+button:focus {
+    outline: none;
+}
+button:active {
+    transform: scale(0.98);
+}
+.background {
+  color: white;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 77, 153);
+}
+.wrapper {
+  display: block;
+}
+.name {
+  font-size: 50px;
+}
+.clock {
+  text-align: center;
+  display: block;
+  padding-bottom: 20px;
+}
+.length-control {
+  min-width: 250px;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+}
+#break-label, #session-label {
+  display: block;
+  font-size: 30px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#break-decrement, #break-increment {
+  display: inline-block;
+}
+#break-length, #session-length {
+  padding: 0px 20px 0px 20px;
+  font-size: 35px;
+}
+.timer {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  min-width: 250px;
+  max-width: 300px;
+  margin-top: 60px;
+  padding: 15px;
+  border: 6px solid black;
+  border-color: rgb(13, 103, 191);
+  border-radius: 15px;
+}
+.session {
+  display: block;
+  font-size: 35px;
+}
+.time {
+  font-size: 60px;
+}
+.buttons {
+  padding: 20px;
+  font-size: 25px;
+}
+#start_stop {
+  border: 2px solid black;
+  border-color: rgb(13, 103, 191);
+  border-radius: 8px;
+  padding-left: 0px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+#reset {
+  border: 2px solid black;
+  border-color: rgb(13, 103, 191);
+  border-radius: 8px;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: 80px;
 }
